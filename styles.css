@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  grid-template-rows: 50px 1fr 100px;
+  grid-template-areas:
+    "sidenav header"
+    "sidenav main"
+    "sidenav footer";
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #648ca6;
+}
+
+.sidenav {
+  grid-area: sidenav;
+  background-color: #394263;
+}
+
+.main {
+  grid-area: main;
+  background-color: #D3D3D3;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3333%);
+  grid-template-rows: repeat(2, 50%);
+}
+
+.main-card {
+  background-color: white;
+  margin: 30px;
+  border: 2px solid red;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #648ca6;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 100%);
+}
+
+.footer-card {
+  background-color: white;
+  margin: 30px;
+  border: 2px solid red;
+}
