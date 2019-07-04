@@ -6,7 +6,7 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 20% 1fr;
   grid-template-rows: 50px 1fr 100px;
   grid-template-areas:
     "sidenav header"
@@ -17,7 +17,47 @@
 
 .header {
   grid-area: header;
-  background-color: #648ca6;
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.header-icons {
+  color: #888888;
+  margin: 16px;
+}
+
+.header-icons:hover {
+  color: 	#202020;
+}
+
+.header-paragraph {
+  margin: 16px;
+}
+
+.header-link {
+  display: flex;
+  text-decoration: none;
+}
+
+input {
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+p {
+  color: #888888;
+}
+
+.header-img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
 }
 
 .sidenav {
@@ -25,30 +65,121 @@
   background-color: #394263;
 }
 
+.sidenav-link {
+  display: block;
+  color: #F4F6F9;
+  background: #302D43;
+  text-decoration: none;
+  padding: 15px 30px;
+}
+
+.sidenav-link:hover {
+  background: #282639;
+  transition: all 0.3s ease-in-out;
+  padding: 15px 30px 15px 25px;
+}
+
+.sidenav-icons {
+  display: inline-block;
+  width: 30px;
+}
+
+.earth {
+  color: #00A86B;
+}
+
+.mars {
+  color: #ED2939;
+}
+
+.mercury {
+  color: #888888;
+}
+
+.jupiter {
+  color: #0080FF;
+}
+
 .main {
   grid-area: main;
   background-color: #D3D3D3;
   display: grid;
   grid-template-columns: repeat(3, 33.3333%);
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(4, 25%);
+  /* grid-template-columns: repeat(auto-fit, minmax(257.02px, 1fr)); */
 }
 
 .main-card {
   background-color: white;
-  margin: 30px;
-  border: 2px solid red;
+  margin: 20px;
+}
+
+.main-1 {
+  grid-row-end: span 2;
+}
+
+.main-2 {
+  grid-row-end: span 3;
+}
+
+.main-5 {
+  grid-row-end: span 2;
+}
+
+.main-8 {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(2, 50%);
+}
+
+.sub-card-1 {
+  background-color: #606060;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-card-2 {
+  background-color: #0080FF;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-card-3 {
+  background-color: #333333;
+  color: white;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-card-4 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer {
   grid-area: footer;
-  background-color: #648ca6;
+  background-color: #D3D3D3;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(1, 100%);
+  /* grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 100%); */
+  grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr));
 }
 
 .footer-card {
   background-color: white;
-  margin: 30px;
-  border: 2px solid red;
+  margin: 20px;
+}
+
+.footer-3 {
+  background-color: #ED2939;
+}
+
+.footer-4 {
+  background-color: #606060;
 }
