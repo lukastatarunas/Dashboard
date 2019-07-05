@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+.header-item {
+  color: #888888;
+  /* margin: 16px; */
+}
+
+/* .header-item:hover {
+  color: #202020;
+  margin: 16px;
+} */
+
 .header-icons {
   color: #888888;
   margin: 16px;
@@ -23,7 +33,7 @@
 
 /* small screen */
 
-@media(max-width: 1500px) {
+@media(max-width: 700px) {
 
   /* .grid-container {
     display: grid;
@@ -51,7 +61,7 @@
 
 /* big screen */
 
-@media(min-width: 1500px) {
+@media(min-width: 700px) {
 
   .grid-container {
     display: grid;
@@ -146,10 +156,23 @@ p {
   grid-template-rows: repeat(4, 25%);
 }
 
+@media(max-width: 900px) {
+  .main {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(8, 12.5%);
+  }
+}
+
+/* @media(max-width: 700px) {
+  .main {
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(16, 6.25%);
+  }
+} */
+
 .main-card {
   background-color: white;
   margin: 20px;
-  transition: width 2s;
   border-radius: 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -178,8 +201,8 @@ p {
   grid-template-rows: repeat(4, 25%);
 }
 
-.cog {
-  margin-left: auto;
+.test {
+  display: flex;
 }
 
 .main-4 {
@@ -207,6 +230,7 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(6, 16.5%);
+  font-size: 1vw;
 }
 
 .main-8 {
@@ -249,7 +273,6 @@ p {
   display: grid;
   justify-content: center;
   align-items: center;
-  transition: width 2s;
 }
 
 .sub-card-2 {
@@ -258,7 +281,6 @@ p {
   display: grid;
   justify-content: center;
   align-items: center;
-  transition: width 2s;
 }
 
 .sub-card-3 {
@@ -267,14 +289,12 @@ p {
   display: grid;
   justify-content: center;
   align-items: center;
-  transition: width 2s;
 }
 
 .sub-card-4 {
   display: grid;
   justify-content: center;
   align-items: center;
-  transition: width 2s;
 }
 
 .sub-card-1:hover {
@@ -297,9 +317,9 @@ p {
   grid-area: footer;
   background-color: #D3D3D3;
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(1, 100%);
-  /* grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr)); */
+  /* grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 100%); */
+  grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr));
 }
 
 .footer-card {
