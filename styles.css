@@ -4,24 +4,6 @@
   box-sizing: border-box;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 20% 1fr;
-  grid-template-rows: 50px 1fr 100px;
-  grid-template-areas:
-    "sidenav header"
-    "sidenav main"
-    "sidenav footer";
-  height: 100%;
-}
-
-.header {
-  grid-area: header;
-  background-color: white;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
-}
-
 .header-icons {
   color: #888888;
   margin: 16px;
@@ -35,9 +17,66 @@
   margin: 16px;
 }
 
-.header-link {
-  display: flex;
-  text-decoration: none;
+.header-paragraph:hover {
+  color: 	#202020;
+}
+
+/* small screen */
+
+@media(max-width: 1500px) {
+
+  /* .grid-container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    height: 100%;
+  } */
+
+  .header {
+    grid-area: header;
+    flex-wrap: wrap;
+    background-color: white;
+    display: flex;
+  }
+
+  .header-link {
+    display: flex;
+    text-decoration: none;
+  }
+}
+
+/* big screen */
+
+@media(min-width: 1500px) {
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    height: 100%;
+  }
+
+  .header {
+    grid-area: header;
+    flex-wrap:wrap;
+    background-color: white;
+    display: flex;
+  }
+
+  .header-link {
+    display: flex;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 input {
@@ -105,7 +144,6 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 33.3333%);
   grid-template-rows: repeat(4, 25%);
-  /* grid-template-columns: repeat(auto-fit, minmax(257.02px, 1fr)); */
 }
 
 .main-card {
@@ -113,6 +151,9 @@ p {
   margin: 20px;
   transition: width 2s;
   border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main-1 {
@@ -135,6 +176,10 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, 25%);
+}
+
+.cog {
+  margin-left: auto;
 }
 
 .main-4 {
@@ -252,9 +297,9 @@ p {
   grid-area: footer;
   background-color: #D3D3D3;
   display: grid;
-  /* grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(1, 100%); */
-  grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr));
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 100%);
+  /* grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr)); */
 }
 
 .footer-card {
