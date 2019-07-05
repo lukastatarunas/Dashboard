@@ -12,14 +12,14 @@
     "sidenav header"
     "sidenav main"
     "sidenav footer";
-  height: 100vh;
+  height: 100%;
 }
 
 .header {
   grid-area: header;
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(10px, 1fr));
 }
 
 .header-icons {
@@ -62,7 +62,6 @@ p {
 
 .sidenav {
   grid-area: sidenav;
-  background-color: #394263;
 }
 
 .sidenav-link {
@@ -112,18 +111,57 @@ p {
 .main-card {
   background-color: white;
   margin: 20px;
+  transition: width 2s;
+  border-radius: 5px;
 }
 
 .main-1 {
   grid-row-end: span 2;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(13, 7.5%);
+}
+
+.main-1-col-values {
+  background-color: #302D43;
+  color: white;
 }
 
 .main-2 {
   grid-row-end: span 3;
 }
 
+.main-3 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+}
+
+.main-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+}
+
 .main-5 {
   grid-row-end: span 2;
+}
+
+.main-6 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(4, 25%);
+}
+
+.main-6-col-values {
+  background-color: #302D43;
+  color: white;
+}
+
+.main-7 {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(6, 16.5%);
 }
 
 .main-8 {
@@ -132,12 +170,41 @@ p {
   grid-template-rows: repeat(2, 50%);
 }
 
+.main-1:hover {
+  background-color: #E8E8E8;
+}
+
+.main-2:hover {
+  background-color: #E8E8E8;
+}
+
+.main-3:hover {
+  background-color: #E8E8E8;
+}
+
+.main-4:hover {
+  background-color: #E8E8E8;
+}
+
+.main-5:hover {
+  background-color: #E8E8E8;
+}
+
+.main-6:hover {
+  background-color: #E8E8E8;
+}
+
+.main-7:hover {
+  background-color: #E8E8E8;
+}
+
 .sub-card-1 {
-  background-color: #606060;
+  background-color: #A0A0A0;
   color: white;
   display: grid;
   justify-content: center;
   align-items: center;
+  transition: width 2s;
 }
 
 .sub-card-2 {
@@ -146,6 +213,7 @@ p {
   display: grid;
   justify-content: center;
   align-items: center;
+  transition: width 2s;
 }
 
 .sub-card-3 {
@@ -154,12 +222,30 @@ p {
   display: grid;
   justify-content: center;
   align-items: center;
+  transition: width 2s;
 }
 
 .sub-card-4 {
   display: grid;
   justify-content: center;
   align-items: center;
+  transition: width 2s;
+}
+
+.sub-card-1:hover {
+  background-color: #606060
+}
+
+.sub-card-2:hover {
+  background-color: #1034A6;
+}
+
+.sub-card-3:hover {
+  background-color: #000000
+}
+
+.sub-card-4:hover {
+  background-color: #E8E8E8;
 }
 
 .footer {
@@ -174,12 +260,30 @@ p {
 .footer-card {
   background-color: white;
   margin: 20px;
+  border-radius: 5px;
+}
+
+.footer-1:hover {
+  background-color: #E8E8E8;
+}
+
+.footer-2:hover {
+  background-color: #E8E8E8;
 }
 
 .footer-3 {
   background-color: #ED2939;
+  transition: width 2s;
+}
+
+.footer-3:hover {
+  background-color: #C21807;
 }
 
 .footer-4 {
+  background-color: #A0A0A0;
+}
+
+.footer-4:hover {
   background-color: #606060;
 }
