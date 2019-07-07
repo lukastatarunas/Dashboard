@@ -6,13 +6,11 @@
 
 .header-item {
   color: #888888;
-  /* margin: 16px; */
 }
 
-/* .header-item:hover {
+.header-item:hover {
   color: #202020;
-  margin: 16px;
-} */
+}
 
 .header-icons {
   color: #888888;
@@ -35,21 +33,10 @@
 
 @media(max-width: 700px) {
 
-  /* .grid-container {
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    grid-template-rows: 50px 1fr 100px;
-    grid-template-areas:
-      "sidenav header"
-      "sidenav main"
-      "sidenav footer";
-    height: 100%;
-  } */
-
   .header {
     grid-area: header;
     flex-wrap: wrap;
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
   }
 
@@ -76,9 +63,9 @@
 
   .header {
     grid-area: header;
-    flex-wrap:wrap;
-    background-color: white;
+    background-color: #FFFFFF;
     display: flex;
+    flex-wrap: wrap;
   }
 
   .header-link {
@@ -132,6 +119,12 @@ p {
   width: 30px;
 }
 
+.hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
 .earth {
   color: #00A86B;
 }
@@ -156,12 +149,12 @@ p {
   grid-template-rows: repeat(4, 25%);
 }
 
-@media(max-width: 900px) {
+/* @media(max-width: 900px) {
   .main {
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(8, 12.5%);
   }
-}
+} */
 
 /* @media(max-width: 700px) {
   .main {
@@ -171,7 +164,7 @@ p {
 } */
 
 .main-card {
-  background-color: white;
+  background-color: #FFFFFF;
   margin: 20px;
   border-radius: 5px;
   white-space: nowrap;
@@ -188,7 +181,7 @@ p {
 
 .main-1-col-values {
   background-color: #302D43;
-  color: white;
+  color: #FFFFFF;
 }
 
 .main-2 {
@@ -199,10 +192,6 @@ p {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(4, 25%);
-}
-
-.test {
-  display: flex;
 }
 
 .main-4 {
@@ -223,14 +212,14 @@ p {
 
 .main-6-col-values {
   background-color: #302D43;
-  color: white;
+  color: #FFFFFF;
 }
 
 .main-7 {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows: repeat(6, 16.5%);
-  font-size: 1vw;
+  /* font-size: 1vw; */
 }
 
 .main-8 {
@@ -269,7 +258,7 @@ p {
 
 .sub-card-1 {
   background-color: #A0A0A0;
-  color: white;
+  color: #FFFFFF;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -277,7 +266,7 @@ p {
 
 .sub-card-2 {
   background-color: #0080FF;
-  color: white;
+  color: #FFFFFF;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -285,7 +274,7 @@ p {
 
 .sub-card-3 {
   background-color: #333333;
-  color: white;
+  color: #FFFFFF;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -323,7 +312,7 @@ p {
 }
 
 .footer-card {
-  background-color: white;
+  background-color: #FFFFFF;
   margin: 20px;
   border-radius: 5px;
 }
@@ -338,7 +327,6 @@ p {
 
 .footer-3 {
   background-color: #ED2939;
-  transition: width 2s;
 }
 
 .footer-3:hover {
