@@ -16,17 +16,21 @@
 }
 
 .header-icon {
-  color: #888888;
-  margin: 16px;
+  color: #BBB8C9;
+  margin: 13px;
 }
 
 .header-icon:hover {
   color: 	#202020;
 }
 
+.search-icon {
+  color: #BBB8C9;
+}
+
 .header-paragraph {
-  color: #888888;
-  margin: 16px;
+  color: #BBB8C9;
+  margin: 13px;
 }
 
 .header-paragraph:hover {
@@ -112,18 +116,18 @@
   grid-area: sidenav;
   position: sticky;
   top: 0;
-  background: #302D43;
+  background: #38354A;
 }
 
 .sidenav:hover {
   position: sticky;
   top: 0;
-  background: #202020;
+  background: #2B2839;
 }
 
 .sidenav-link {
   display: block;
-  color: #F4F6F9;
+  color: #EEF1F6;
   padding: 15px 30px;
 }
 
@@ -144,24 +148,24 @@
 }
 
 .earth {
-  color: #00A86B;
+  color: #54B993;
 }
 
 .mars {
-  color: #ED2939;
+  color: #ED4753;
 }
 
 .mercury {
-  color: #888888;
+  color: #A3ADB7;
 }
 
 .jupiter {
-  color: #0080FF;
+  color: #0DA6E5;
 }
 
 .main {
   grid-area: main;
-  background-color: #D3D3D3;
+  background-color: #ECEFF4;
   display: grid;
   grid-template-columns: repeat(3, 33.3333%);
   grid-template-rows: repeat(4, 25%);
@@ -174,15 +178,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  font-size: 1vw;
 }
 
 .main-1 {
   grid-row-end: span 2;
-}
-
-.main-1-col-values {
-  background-color: #302D43;
-  color: #FFFFFF;
 }
 
 .main-2 {
@@ -220,35 +220,35 @@
 }
 
 .main-1:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .main-2:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .main-3:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .main-4:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .main-5:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .main-6:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .main-7:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .sub-card-1 {
-  background-color: #A0A0A0;
+  background-color: #697A84;
   color: #FFFFFF;
   display: grid;
   justify-content: center;
@@ -256,7 +256,7 @@
 }
 
 .sub-card-2 {
-  background-color: #0080FF;
+  background-color: #02A8FE;
   color: #FFFFFF;
   display: grid;
   justify-content: center;
@@ -264,7 +264,7 @@
 }
 
 .sub-card-3 {
-  background-color: #333333;
+  background-color: #2B2937;
   color: #FFFFFF;
   display: grid;
   justify-content: center;
@@ -282,7 +282,7 @@
 }
 
 .sub-card-2:hover {
-  background-color: #1034A6;
+  background-color: #0000FF;
 }
 
 .sub-card-3:hover {
@@ -290,12 +290,12 @@
 }
 
 .sub-card-4:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .footer {
   grid-area: footer;
-  background-color: #D3D3D3;
+  background-color: #ECEFF4;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr));
   height: 100wh;
@@ -309,24 +309,24 @@
 }
 
 .footer-1:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .footer-2:hover {
-  background-color: #E8E8E8;
+  background-color: #D8D8D8;
 }
 
 .footer-3 {
-  background-color: #ED2939;
+  background-color: #FC434B;
   color: #FFFFFF;
 }
 
 .footer-3:hover {
-  background-color: #C21807;
+  background-color: #FF0000;
 }
 
 .footer-4 {
-  background-color: #A0A0A0;
+  background-color: #697A84;
   color: #FFFFFF;
 }
 
@@ -354,4 +354,62 @@
 
 .nav-icon {
   margin-top: 25px;
+}
+
+form{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px;
+  border: 4px solid white;
+  padding: 5px;
+}
+
+input{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: 0;
+  border: 0;
+  display: none;
+  border-radius: 20px;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+
+.fa{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #07051A;
+  text-align: center;
+  transition: all 1s;
+}
+
+form:hover{
+  width: 200px;
+  cursor: pointer;
+}
+
+form:hover input{
+  display: block;
+}
+
+form:hover .fa{
+  background: #07051a;
+  color: #FFFFFF;
 }
