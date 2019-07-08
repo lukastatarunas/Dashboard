@@ -4,24 +4,28 @@
   box-sizing: border-box;
 }
 
-.header-item {
-  color: #888888;
+@media(min-width: 1164px) {
+  .header {
+    position: sticky;
+    top: 0;
+  }
 }
 
-.header-item:hover {
-  color: #202020;
+.header-link:hover {
+  text-decoration: none;
 }
 
-.header-icons {
+.header-icon {
   color: #888888;
   margin: 16px;
 }
 
-.header-icons:hover {
+.header-icon:hover {
   color: 	#202020;
 }
 
 .header-paragraph {
+  color: #888888;
   margin: 16px;
 }
 
@@ -33,16 +37,32 @@
 
 @media(max-width: 700px) {
 
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 100px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+  }
+  
   .header {
     grid-area: header;
-    flex-wrap: wrap;
     background-color: #FFFFFF;
+    flex-wrap: wrap;
     display: flex;
   }
 
   .header-link {
     display: flex;
     text-decoration: none;
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(8, 12.5%);
   }
 }
 
@@ -53,12 +73,11 @@
   .grid-container {
     display: grid;
     grid-template-columns: 20% 1fr;
-    grid-template-rows: 50px 1fr 100px;
+    grid-template-rows: 50px 1fr;
     grid-template-areas:
       "sidenav header"
       "sidenav main"
       "sidenav footer";
-    height: 100%;
   }
 
   .header {
@@ -76,17 +95,10 @@
   }
 }
 
-input {
+.search {
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
-  padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-p {
-  color: #888888;
 }
 
 .header-img {
@@ -98,24 +110,24 @@ p {
 
 .sidenav {
   grid-area: sidenav;
+  position: sticky;
+  top: 0;
+  background: #302D43;
 }
 
 .sidenav-link {
   display: block;
   color: #F4F6F9;
-  background: #302D43;
-  text-decoration: none;
   padding: 15px 30px;
 }
 
 .sidenav-link:hover {
-  background: #282639;
   transition: all 0.3s ease-in-out;
   padding: 15px 30px 15px 25px;
+  text-decoration: none;
 }
 
 .sidenav-icons {
-  display: inline-block;
   width: 30px;
 }
 
@@ -149,20 +161,6 @@ p {
   grid-template-rows: repeat(4, 25%);
 }
 
-/* @media(max-width: 900px) {
-  .main {
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(8, 12.5%);
-  }
-} */
-
-/* @media(max-width: 700px) {
-  .main {
-    grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(16, 6.25%);
-  }
-} */
-
 .main-card {
   background-color: #FFFFFF;
   margin: 20px;
@@ -174,9 +172,6 @@ p {
 
 .main-1 {
   grid-row-end: span 2;
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(13, 7.5%);
 }
 
 .main-1-col-values {
@@ -188,38 +183,13 @@ p {
   grid-row-end: span 3;
 }
 
-.main-3 {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4, 25%);
-}
-
-.main-4 {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4, 25%);
-}
-
 .main-5 {
   grid-row-end: span 2;
-}
-
-.main-6 {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(4, 25%);
 }
 
 .main-6-col-values {
   background-color: #302D43;
   color: #FFFFFF;
-}
-
-.main-7 {
-  display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(6, 16.5%);
-  /* font-size: 1vw; */
 }
 
 .main-8 {
@@ -306,15 +276,15 @@ p {
   grid-area: footer;
   background-color: #D3D3D3;
   display: grid;
-  /* grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(1, 100%); */
   grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr));
+  height: 100wh;
 }
 
 .footer-card {
   background-color: #FFFFFF;
   margin: 20px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .footer-1:hover {
@@ -327,6 +297,7 @@ p {
 
 .footer-3 {
   background-color: #ED2939;
+  color: #FFFFFF;
 }
 
 .footer-3:hover {
@@ -335,8 +306,31 @@ p {
 
 .footer-4 {
   background-color: #A0A0A0;
+  color: #FFFFFF;
 }
 
 .footer-4:hover {
   background-color: #606060;
+}
+
+.footer-icons {
+  margin-top: 20px;
+}
+
+.bandwidth,
+.dailysales {
+  color: #FFFFFF;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-paragraph {
+  margin: 20px;
+  margin-right: auto;
+}
+
+.nav-icon {
+  margin-top: 25px;
 }

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Dashboard</title>
         <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/77ccb03b37.js"></script>
     </head>
     <body>
@@ -11,244 +12,417 @@
         <header class="header">
           <!-- <div class="header-item"> -->
               <a class="header-link" href="#">
-                <i class="fas fa-folder header-icons"></i>
+                <i class="fas fa-folder header-icon"></i>
                 <p class="header-paragraph">Issues History</p>
-                <i class="fas fa-sort-down header-icons"></i>
+                <i class="fas fa-sort-down header-icon"></i>
               </a>
           <!-- </div>
           <div class="header-item"> -->
               <a class="header-link" href="#">
-                <i class="fas fa-database header-icons"></i>
+                <i class="fas fa-database header-icon"></i>
                 <p class="header-paragraph">Dashboards</p>
-                <i class="fas fa-sort-down header-icons"></i>
+                <i class="fas fa-sort-down header-icon"></i>
               </a>
           <!-- </div>
           <div class="header-item"> -->
               <a class="header-link" href="#">
-                <i class="fas fa-star-of-life header-icons"></i>
+                <i class="fas fa-star-of-life header-icon"></i>
                 <p class="header-paragraph">Projects</p>
-                <i class="fas fa-sort-down header-icons"></i>
+                <i class="fas fa-sort-down header-icon"></i>
               </a>
           <!-- </div>
           <div class="header-item"> -->
               <a class="header-link" href="#">
                 <input class="search" type="text" placeholder="Search..." name="" value="">
-                <i class="fas fa-search header-icons"></i>
+                <i class="fas fa-search header-icon"></i>
               </a>
           <!-- </div>
           <div class="header-item"> -->
               <a class="header-link" href="#">
                 <img class="header-img" src="https://randomuser.me/api/portraits/men/32.jpg">
-                <i class="fas fa-sort-down header-icons"></i>
+                <i class="fas fa-sort-down header-icon"></i>
               </a>
           <!-- </div> -->
         </header>
         <aside class="sidenav">
           <a class="sidenav-link" href="#"><strong>CLEAN UI</strong></a>
-            <a class="sidenav-link" href="#"><i class="fas fa-cog sidenav-icons"></i>Theme Settings</a>
-            <a class="sidenav-link" href="#"><i class="fas fa-book sidenav-icons"></i>Documentation</a><hr class="hr">
-            <a class="sidenav-link" href="#"><i class="fas fa-home sidenav-icons"></i>Dashboard</a><hr class="hr">
-            <a class="sidenav-link" href="#"><i class="fas fa-user sidenav-icons"></i>Profile</a>
-            <a class="sidenav-link" href="#"><i class="fas fa-sms sidenav-icons"></i>Messaging</a>
-            <a class="sidenav-link" href="#"><i class="fas fa-envelope sidenav-icons"></i>Mail</a>
-            <a class="sidenav-link" href="#"><i class="far fa-calendar-alt sidenav-icons"></i>Callendar</a>
-            <a class="sidenav-link" href="#"><i class="fas fa-image sidenav-icons"></i>Gallery</a><hr class="hr">
-            <a class="sidenav-link" href="#"><i class="fas fa-copy sidenav-icons"></i>Layout</a>
-            <a class="sidenav-link" href="#"><i class="fas fa-star sidenav-icons"></i>Icons</a>
-            <a class="sidenav-link" href="#"><i class="fas fa-font sidenav-icons"></i>Typography</a><hr class="hr">
-            <a class="sidenav-link" href="#">Forms</a>
-            <a class="sidenav-link" href="#">Components</a>
-            <a class="sidenav-link" href="#">Tables</a>
-            <a class="sidenav-link" href="#">Charts</a><hr class="hr">
-            <a class="sidenav-link" href="#"><i class="fas fa-copy sidenav-icons"></i>Pages</a><hr class="hr">
-            <a class="sidenav-link" href="#">Disabled Item</a>
-            <a class="sidenav-link" href="#">Infinity Nested</a><hr class="hr">
-            <a class="sidenav-link" href="#">Solar System</a>
-            <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons earth"></i>Earth</a>
-            <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons mars"></i>Mars</a>
-            <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons mercury"></i>Mercury</a>
-            <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons jupiter"></i>Jupiter</a>
+          <a class="sidenav-link" href="#"><i class="fas fa-cog sidenav-icons"></i>Theme Settings</a>
+          <a class="sidenav-link" href="#"><i class="fas fa-book sidenav-icons"></i>Documentation</a><hr class="hr">
+          <a class="sidenav-link" href="#"><i class="fas fa-home sidenav-icons"></i>Dashboard</a><hr class="hr">
+          <a class="sidenav-link" href="#"><i class="fas fa-user sidenav-icons"></i>Profile</a>
+          <a class="sidenav-link" href="#"><i class="fas fa-sms sidenav-icons"></i>Messaging</a>
+          <a class="sidenav-link" href="#"><i class="fas fa-envelope sidenav-icons"></i>Mail</a>
+          <a class="sidenav-link" href="#"><i class="far fa-calendar-alt sidenav-icons"></i>Callendar</a>
+          <a class="sidenav-link" href="#"><i class="fas fa-image sidenav-icons"></i>Gallery</a><hr class="hr">
+          <a class="sidenav-link" href="#"><i class="fas fa-copy sidenav-icons"></i>Layout</a>
+          <a class="sidenav-link" href="#"><i class="fas fa-star sidenav-icons"></i>Icons</a>
+          <a class="sidenav-link" href="#"><i class="fas fa-font sidenav-icons"></i>Typography</a><hr class="hr">
+          <a class="sidenav-link" href="#">Forms</a>
+          <a class="sidenav-link" href="#">Components</a>
+          <a class="sidenav-link" href="#">Tables</a>
+          <a class="sidenav-link" href="#">Charts</a><hr class="hr">
+          <a class="sidenav-link" href="#"><i class="fas fa-copy sidenav-icons"></i>Pages</a><hr class="hr">
+          <a class="sidenav-link" href="#">Disabled Item</a>
+          <a class="sidenav-link" href="#">Infinity Nested</a><hr class="hr">
+          <a class="sidenav-link" href="#">Solar System</a>
+          <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons earth"></i>Earth</a>
+          <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons mars"></i>Mars</a>
+          <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons mercury"></i>Mercury</a>
+          <a class="sidenav-link" href="#"><i class="far fa-circle sidenav-icons jupiter"></i>Jupiter</a>
         </aside>
         <main class="main">
           <div class="main-card main-1">
-            <!-- <p class="main-1-col-values">#</p>
-            <p class="main-1-col-values">First Name</p>
-            <p class="main-1-col-values">Last Name</p>
-            <p class="main-1-col-values">Username</p>
-            <p>1</p>
-            <p>Mark</p>
-            <p>Otto</p>
-            <p>@mdo</p>
-            <p>2</p>
-            <p>Jacob</p>
-            <p>Thornton</p>
-            <p>@fat</p>
-            <p>3</p>
-            <p>Larry</p>
-            <p>the Bird</p>
-            <p>@twitter</p>
-            <p>1</p>
-            <p>Mark</p>
-            <p>Otto</p>
-            <p>@mdo</p>
-            <p>2</p>
-            <p>Jacob</p>
-            <p>Thornton</p>
-            <p>@fat</p>
-            <p>3</p>
-            <p>Larry</p>
-            <p>the Bird</p>
-            <p>@twitter</p>
-            <p>1</p>
-            <p>Mark</p>
-            <p>Otto</p>
-            <p>@mdo</p>
-            <p>2</p>
-            <p>Jacob</p>
-            <p>Thornton</p>
-            <p>@fat</p>
-            <p>3</p>
-            <p>Larry</p>
-            <p>the Bird</p>
-            <p>@twitter</p>
-            <p>1</p>
-            <p>Mark</p>
-            <p>Otto</p>
-            <p>@mdo</p>
-            <p>2</p>
-            <p>Jacob</p>
-            <p>Thornton</p>
-            <p>@fat</p>
-            <p>3</p>
-            <p>Larry</p>
-            <p>the Bird</p>
-            <p>@twitter</p> -->
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="main-card main-2">
-              <!-- <p>Conversation: <strong>Software</strong></p>
-              <i class="fas fa-cog sidenav-icons"></i>
-              <i class="fas fa-sort-down header-icons cog"></i><br> -->
+            <nav class="nav">
+              <p class="nav-paragraph">Conversation: <strong>Software</strong></p>
+              <i class="fas fa-cog sidenav-icons nav-icon"></i>
+              <i class="fas fa-sort-down header-icon nav-icon"></i><br>
+            </nav>
           </div>
           <div class="main-card main-3">
-              <!-- <div class="test">
-                  <p>Dashboard: <strong>Users</strong></p>
-                  <i class="fas fa-cog sidenav-icons cog"></i>
-                  <i class="fas fa-sort-down header-icons"></i><br>
-              </div> -->
-              <!-- <p class="main-3-col-values">#</p>
-              <p class="main-3-col-values">First Name</p>
-              <p class="main-3-col-values">Last Name</p>
-              <p class="main-3-col-values">Username</p>
-              <p>1</p>
-              <p>Mark</p>
-              <p>Otto</p>
-              <p>@mdo</p>
-              <p>2</p>
-              <p>Jacob</p>
-              <p>Thornton</p>
-              <p>@fat</p>
-              <p>3</p>
-              <p>Larry</p>
-              <p>the Bird</p>
-              <p>@twitter</p> -->
+            <nav class="nav">
+              <p class="nav-paragraph">Conversation: <strong>Software</strong></p>
+              <i class="fas fa-cog sidenav-icons nav-icon"></i>
+              <i class="fas fa-sort-down header-icon nav-icon"></i><br>
+            </nav>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="main-card main-4">
-              <!-- <p class="main-4-col-values">#</p>
-              <p class="main-4-col-values">First Name</p>
-              <p class="main-4-col-values">Last Name</p>
-              <p class="main-4-col-values">Username</p>
-              <p>1</p>
-              <p>Mark</p>
-              <p>Otto</p>
-              <p>@mdo</p>
-              <p>2</p>
-              <p>Jacob</p>
-              <p>Thornton</p>
-              <p>@fat</p>
-              <p>3</p>
-              <p>Larry</p>
-              <p>the Bird</p>
-              <p>@twitter</p> -->
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="main-card main-5">
-              <!-- <p>Conversation: <strong>Users</strong></p>
-              <i class="fas fa-cog sidenav-icons cog"></i>
-              <i class="fas fa-sort-down header-icons"></i><br> -->
+            <nav class="nav">
+              <p class="nav-paragraph">Conversation: <strong>Users</strong></p>
+              <i class="fas fa-cog sidenav-icons nav-icon"></i>
+              <i class="fas fa-sort-down header-icon nav-icon"></i><br>
+            </nav>
           </div>
           <div class="main-card main-6">
-              <!-- <p class="main-6-col-values">#</p>
-              <p class="main-6-col-values">First Name</p>
-              <p class="main-6-col-values">Last Name</p>
-              <p class="main-6-col-values">Username</p>
-              <p>1</p>
-              <p>Mark</p>
-              <p>Otto</p>
-              <p>@mdo</p>
-              <p>2</p>
-              <p>Jacob</p>
-              <p>Thornton</p>
-              <p>@fat</p>
-              <p>3</p>
-              <p>Larry</p>
-              <p>the Bird</p>
-              <p>@twitter</p> -->
+            <table class="table">
+              <thead class="thead-dark">
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+            </table>
           </div>
           <div class="main-card main-7">
-              <!-- <p>Dashboard: <strong>Users</strong></p>
-              <i class="fas fa-cog sidenav-icons cog"></i>
-              <i class="fas fa-sort-down header-icons"></i><br>
-              <p class="main-7-col-values">#</p>
-              <p class="main-7-col-values">First Name</p>
-              <p class="main-7-col-values">Last Name</p>
-              <p class="main-7-col-values">Username</p>
-              <p>1</p>
-              <p>Mark</p>
-              <p>Otto</p>
-              <p>@mdo</p>
-              <p>2</p>
-              <p>Jacob</p>
-              <p>Thornton</p>
-              <p>@fat</p>
-              <p>2</p>
-              <p>Jacob</p>
-              <p>Thornton</p>
-              <p>@fat</p>
-              <p>2</p>
-              <p>Jacob</p>
-              <p>Thornton</p>
-              <p>@fat</p>
-              <p>3</p>
-              <p>Larry</p>
-              <p>the Bird</p>
-              <p>@twitter</p> -->
+            <nav class="nav">
+              <p class="nav-paragraph">Dashboard: <strong>Users</strong></p>
+              <i class="fas fa-cog sidenav-icons nav-icon"></i>
+              <i class="fas fa-sort-down header-icon nav-icon"></i><br>
+            </nav>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">First Name</th>
+                  <th scope="col">Last Name</th>
+                  <th scope="col">Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td>Larry</td>
+                  <td>the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
           <div class="main-8">
             <div class="main-card sub-card-1">
-              <!-- <ol>
+              <ol>
                 <li>Upgrade</li>
                 <li>Finish</li>
-              </ol> -->
+              </ol>
             </div>
             <div class="main-card sub-card-2">
-              <!-- <h1>Sale...</h1>
-              <p>View Report</p> -->
+              <h1>Sale...</h1>
+              <p>View Report</p>
             </div>
             <div class="main-card sub-card-3">
-              <!-- <h1>Clean</h1>
+              <h1>Clean</h1>
               Simple
-              Responsive -->
+              Responsive
             </div>
             <div class="main-card sub-card-4">
-              <!-- <p>Total: 24 467</p>
-              <p>New: 456</p> -->
+              <p>Total: 24 467</p>
+              <p>New: 456</p>
             </div>
           </div>
         </main>
         <footer class="footer">
-          <div class="footer-card footer-1">1</div>
-          <div class="footer-card footer-2">2</div>
-          <div class="footer-card footer-3">3</div>
-          <div class="footer-card footer-4">4</div>
+          <div class="footer-card footer-1">
+            <i class="fas fa-users fa-3x footer-items footer-icon"></i>
+            <h1 class="footer-items">Users</h1>
+            <p class="footer-items">Total: 24 467</p>
+          </div>
+          <div class="footer-card footer-2">
+            <i class="fas fa-database fa-3x footer-items"></i>
+            <h1 class="footer-items">Databases</h1>
+            <p class="footer-items">Total: 765</p>
+          </div>
+          <div class="footer-card footer-3">
+            <i class="fas fa-project-diagram fa-3x footer-items"></i>
+            <h1 class="footer-items bandwidth">Bandwidth</h1>
+            <p class="footer-items bandwidth">160.32 GB/S</p>
+          </div>
+          <div class="footer-card footer-4">
+            <i class="fas fa-chart-pie fa-3x footer-items"></i>
+            <h1 class="footer-items dailysales">Daily Sales</h1>
+            <p class="footer-items dailysales">Total: 765</p>
+          </div>
         </footer>
       </div>
     </body>
