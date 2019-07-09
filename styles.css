@@ -458,7 +458,11 @@ form:hover .fa {
     display: none;
   }
 
-  .sub-card-wrapper {
+  .sub-card-list-tem {
+    display: none;
+  }
+
+  .sub-card-paragraph {
     display: none;
   }
 }
