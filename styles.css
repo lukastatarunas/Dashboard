@@ -138,6 +138,10 @@
   text-decoration: none;
 }
 
+.sidenav-img {
+  width: 100px;
+}
+
 .sidenav-icons {
   width: 30px;
 }
