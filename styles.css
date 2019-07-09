@@ -456,3 +456,21 @@ form:hover .fa {
 @media(max-width: 552px) {
   
 }
+
+@media(max-width: 765px) {
+  .projects {
+    display: none;
+  }
+}
+
+@media(max-width: 700px) {
+  .dashboards {
+    display: none;
+  }
+}
+
+@media(max-width: 585px) {
+  .issues {
+    display: none;
+  }
+}
