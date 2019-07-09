@@ -298,7 +298,9 @@
   grid-area: footer;
   background-color: #ECEFF4;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr));
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: repeat(1, 100%);
+  /* grid-template-columns: repeat(auto-fit, minmax(182.77px, 1fr)); */
 }
 
 .footer-card {
@@ -306,6 +308,9 @@
   margin: 20px;
   border-radius: 5px;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .footer-1:hover {
@@ -414,11 +419,23 @@ form:hover .fa {
   color: #FFFFFF;
 }
 
-/* @media(max-width: 1200px) {
+@media(max-width: 1200px) {
   .main {
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(6, 16.66%);
+  }
+
+  .footer-header {
+    display: none;
+  }
+
+  .footer-paragraph {
+    display: none;
+  }
+
+  .footer-icons {
+    margin-top: 0px;
   }
 }
 
@@ -426,12 +443,16 @@ form:hover .fa {
   .main {
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(4, 25%);
+    grid-template-rows: repeat(12, 8.33%);
   }
-} */
+}
 
 @media(max-width: 827px) {
   form {
     display: none;
   }
+}
+
+@media(max-width: 552px) {
+  
 }
