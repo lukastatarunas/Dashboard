@@ -453,12 +453,12 @@ form:hover .fa {
   }
 }
 
-@media(max-width: 552px) {
-  
-}
-
 @media(max-width: 765px) {
   .projects {
+    display: none;
+  }
+
+  .sub-card-wrapper {
     display: none;
   }
 }
